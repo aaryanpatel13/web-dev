@@ -1,0 +1,295 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f8f8;
+    font-family: "Inter", system-ui, sans-serif;
+}
+                                            /*Note*/
+.note-container {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+.left-icons{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.left-icons button {
+    width: 52px;
+    height: 52px;
+    border: 0;
+    background:#fff;
+    border-radius: 50%;
+    font-size: 1.35rem;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    box-shadow:0 4px 14px  rgba(0, 0, 0, 0.06);
+    transition: transform 0.15s ease, box-shadow 0.25s ease;
+
+}
+
+.left-icons button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+                                        /*Form k right side k 4 colors*/
+.right-colors {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dot {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.15s ease;
+}
+
+.dot:hover {
+    transform: scale(1.1);
+}
+
+.black {
+     background: #000000;
+}
+
+.purple {
+     background: #a45cf0;
+}
+.orange { 
+    background: #eda35a; 
+}
+
+.teal   { 
+    background: #4dbfa8; 
+}
+                                    /* Cards stack*/
+.stack {
+    display: grid;
+    margin-bottom: 36px;
+
+}
+
+.card{
+    width: 440px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 28px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.07);
+
+}
+
+.stack .card {
+    grid-area: 1 / 1;
+    transform-origin: bottom center;
+    transition: transform 0.3s ease;
+}
+
+.stack .card:nth-child(1) {
+    z-index: 3;
+}
+
+.stack .card:nth-child(2) {
+    z-index: 2;
+    transform: translateY(16px) scale(0.95);
+    border: 1px solid #ececec;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
+    pointer-events: none;
+}
+
+.stack .card:nth-child(3) {
+    z-index: 1;
+    transform: translateY(32px) scale(0.9);
+    border: 1px solid #ececec;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.05);
+    pointer-events: none;
+}
+.stack .card:nth-child(n + 4) {
+    display: none;  /* Third card k baad k sare card third k pichhe chhupe rahenge*/
+}
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #eda35a;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2rem;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+}
+
+.avatar img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.name {
+    margin: 38px 0 22px;
+    font-size: 1.65rem;
+    font-weight: 700;
+}
+
+
+.details {
+    margin: 0;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
+    font-size: 1.05rem;
+    color: #6b6b6b;
+}
+
+.row dt,
+.row dd {
+    margin: 0;
+}
+
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    height: 42px;
+    padding: 0 22px;
+    border: 0;
+    border-radius: 999px;
+    font: inherit;
+    font-size: 1.05rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+
+}
+
+.btn:active {
+    transform: scale(0.97);
+}
+
+.btn-primary {
+    background: rgb(60, 60, 60);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #222;
+}
+
+.btn-secondary {
+    background: #f0f0f0;
+    color: #0a0a0a;
+}
+
+.btn-secondary:hover {
+    background: #e2e2e2;
+}
+
+
+.call-btn {
+    background-color: #000000;
+    color: #fff;
+}
+.call-btn:hover {
+    background: #222;
+}
+
+
+
+                                            /* Form Container*/
+.form-container {
+    position: absolute;
+    padding: 30px;
+    inset: 0;
+    z-index: 10;
+    display: grid;
+    place-items: center;
+    background: rgba(248, 248, 248, 0.75);
+    backdrop-filter: blur(6px);
+    display: none;
+
+}
+
+.form-container form {
+    width: 420px;
+    max-width: calc(100% - 32px);
+    padding: 28px;
+    display: grid;
+    gap: 18px;
+    background: #fff;
+    border-radius: 28px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+.form-container h2 {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.field-label {
+    display: grid;
+    gap: 8px;
+    margin: 0;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.field {
+    height: 46px;
+    padding: 0 18px;
+    border: 1px solid #ececec;
+    border-radius: 999px;
+    background: #fff;
+    font: inherit;
+    color: #0a0a0a;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border: 1.5px solid var(--color);
+    border-radius: 999px;
+    color: var(--color);
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+.tag:has(input:checked) {
+    background: color-mix(in srgb, var(--color) 15%, white);
+}
+
+
+.btn-danger {
+    background: #ea605a;
+    color: #fff;
+}
+.btn-danger:hover {
+    background: #d9524c;
+}

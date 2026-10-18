@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call-App</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+                                <!--Form container-->
+    <div class="form-container" id="form-container">
+        <form id="note-form">
+            <h2>New Call</h2>
+                                <!--Form details-->
+            <label class="field-label">Image URL
+                <input class="field" name="image" type="url" placeholder="https://example.co/photo.jpeg">
+            </label>
+
+            <label class="field-label">Full name
+                <input required class="field" name="fullname" type="text" required placeholder="Enter full name">
+            </label>
+
+            <label class="field-label">Home Town
+                <input required class="field" name="town" type="text"  placeholder="Enter home town">
+            </label>
+
+            <label class="field-label">Purpose
+                <input required class="field" name="purpose" type="text" placeholder="e.g. quick appointment note">
+            </label>
+                                    <!--Form Category-->
+            <div>
+                <p class="field-label">Category</p>
+                <div class="tags">
+                    <label class="tag" style="--color:#b3414f"><input type="radio" name="category" value="emergency"> Emergency</label>
+                    <label class="tag" style="--color:#d98a2b"><input type="radio" name="category" value="important"> Important</label>
+                    <label class="tag" style="--color:#6b3fa0"><input type="radio" name="category" value="urgent"> Urgent</label>
+                    <label class="tag" style="--color:#8a8a8a"><input type="radio" name="category" value="norush"> No rush</label>
+                </div>
+            </div>
+            <!--Submit or create note buttons-->
+            <button type="submit" class="btn btn-primary w-full justify-center">Create Note</button>
+            <button type="button" class="btn btn-danger w-full justify-center" id="closeBtn">Close</button>
+
+        </form>
+    </div>
+                                    <!-- Note container-->
+    <div class="note-container" >
+        <div class="left-icons">
+            <button id="add-note"><i class="ri-add-line"></i></button>
+            <button id="upBtn"><i class="ri-arrow-up-line"></i></button>
+            <button id="downBtn"><i class="ri-arrow-down-line"></i></button>
+        </div>
+
+                                        <!--Cards-->
+        <div class="stack">
+        </div>
+
+
+        <div class="right-colors">
+            <span class="dot black"></span>
+            <span class="dot purple"></span>
+            <span class="dot orange"></span>
+            <span class="dot teal"></span>
+        </div>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

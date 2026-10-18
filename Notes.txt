@@ -1,4 +1,28 @@
-//Functions in Javascript
+                                #   Scope
+Scope mtlb hum apne created variables or function ko kaha tk use kr skte hai.
+Exaple: function abcd(){
+    let a = 12;
+};
+iss a ko function k bahar access nhi kr skta main
+
+scope 3 type ka hota hai: 1. Fuctional scope    2. Globa Scope  3. Block Scope
+
+
+
+
+                            # Execution Context
+
+# Lexical Scoping
+# Dynamic Scoping
+
+
+
+
+
+
+
+
+                                //Functions in Javascript
 
 Js m function bnane k teen tareeke hai.
 
