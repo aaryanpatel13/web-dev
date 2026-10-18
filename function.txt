@@ -1,0 +1,28 @@
+//Functions in Javascript
+
+Js m function bnane k teen tareeke hai.
+
+Type 1: Functon Declaration:
+    function name(){
+        console.log("Hello");
+    }
+
+Type 2: Function Expression: 
+Function ko variable m store krna
+    let name = function(){
+        console.log("Hello");
+    }
+
+Type 3: Fat Arrow Function:
+Fat mltb brackets ()
+Arrow mtlb =>
+    let name = ()=>{
+        console.log("Hello");
+    }
+
+
+Parameter: Function bnate time jo brackets andr variable hote hai unhe parameters kehte hai
+Arguements: Fuction ko call krte time jo acutal values hum dete hia unhe aguements hai 
+
+
+
