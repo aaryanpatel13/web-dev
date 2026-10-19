@@ -1,0 +1,126 @@
+/* basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0d0d0d;
+    color: #e5e5e5;
+    font-family: "Inter", -apple-system, "Segoe UI", Arial, sans-serif;
+    padding: 20px;
+}
+
+/* ---------- form ---------- */
+
+.form {
+    background-color: #2a2a2a;
+    border: 1px solid #3a3a3a;
+    border-radius: 12px;
+    max-width: 380px;
+    margin: 0 auto 35px;
+    padding: 24px;
+}
+
+.form h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 14px;
+    font-family: inherit;
+    margin-bottom: 18px;
+}
+
+form textarea {
+    height: 65px;
+    resize: vertical;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: 2px solid #777;
+}
+
+form button {
+    width: 100%;
+    background-color: #262626;
+    color: #fff;
+    border: 1px solid #3a3a3a;
+    border-radius: 8px;
+    padding: 14px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+form button:hover {
+    background-color: #333;
+}
+
+/* ---------- cards ---------- */
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 28px;
+}
+
+.user-card {
+    background-color: #2a2a2a;
+    border: 1px solid #3a3a3a;
+    border-radius: 12px;
+    width: 250px;
+    padding: 24px 20px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.user-card:hover {
+    transform: translateY(-6px);
+}
+
+.user-card img {
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #4a4a4a;
+    margin-bottom: 14px;
+}
+
+.user-card h2 {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.user-card h3 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.user-card p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #d0d0d0;
+}
