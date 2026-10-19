@@ -124,3 +124,23 @@ form button:hover {
     line-height: 1.5;
     color: #d0d0d0;
 }
+
+
+/* ---------- remove button ---------- */
+.remove-btn {
+    margin-top: 16px;
+    background-color: transparent;
+    color: #ff6b6b;
+    border: 1px solid #5a3a3a;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+}
+ 
+.remove-btn:hover {
+    background-color: #ff6b6b;
+    color: #1a1a1a;
+}
